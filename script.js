@@ -48,12 +48,22 @@ const renderWidget = (data) => {
 		brandingDiv.classList.add("branding");
 		brandingDiv.appendChild(branding);
 
+		let button = document.createElement("button");
+		button.addEventListener("click", ()=>{
+			widgetItem.remove();
+		});
+		button.classList.add("buttonoverlap");
+		button.innerText = "x";
+
+
 		let link = document.createElement("a");
 		link.href = item.url;
 		link.appendChild(img);
 		link.appendChild(titleDiv);
 		link.appendChild(brandingDiv);
 
+		
+		widgetItem.appendChild(button);
 		widgetItem.appendChild(link);
 
 		widget.appendChild(widgetItem);

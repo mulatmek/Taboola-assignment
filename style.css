@@ -44,6 +44,16 @@
         border: 1px solid #070707;
     }
 
+    .widget-item .buttonoverlap{
+        position: absolute;
+        display: none;
+        z-index: 1;
+    }
+
+    .widget-item:hover .buttonoverlap{ 
+        display:block;
+    }
+
     .widget-item img {
         width: 100%;
         height: auto;
