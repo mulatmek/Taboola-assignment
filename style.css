@@ -23,7 +23,7 @@
     .widget-header {
         margin-left: 250px;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 1rem;
+        font-size: 0.7rem;
     }
     
     .widget-item h3 {
@@ -53,6 +53,10 @@
     .widget-item:hover .buttonoverlap{ 
         display:block;
     }
+  
+    .widget-item:hover .tooltiptext {
+        visibility: visible;
+    }
 
     .widget-item img {
         width: 100%;
@@ -60,9 +64,7 @@
         object-fit: cover;
         margin-bottom: 10px;
     }
-        
 
-        
     .widget-item p {
         font-size: 0.8rem;
         color: #666;
@@ -86,7 +88,7 @@
         -webkit-line-clamp: 3; /* number of lines to show */
                 line-clamp: 3; 
         -webkit-box-orient: vertical;
-    }
+    } 
  }
     
 
