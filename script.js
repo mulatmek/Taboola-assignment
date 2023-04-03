@@ -7,7 +7,7 @@
 */
 
 // Fetching the data from the API
-const fetchData = url => {
+const fetchData = (url) => {
 	return fetch(url,{mode: 'cors'})
 		.then(response => response.json())
 		.catch(error => console.error(error));
@@ -30,7 +30,7 @@ const renderWidget = (data) => {
 		if (item.categories !== undefined) {
 			let categories = document.createElement("p");
 			categoriesHolder = '';
-			item.categories.forEach(category => { categoriesHolder += category + ', ' });
+			item.categories.forEach(category => { categoriesHolder += category + '| ' });
 			categoriesHolder = categoriesHolder.slice(0, -2);
 			categories.innerText = categoriesHolder;
 			widgetItem.appendChild(categories);
