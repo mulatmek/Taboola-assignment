@@ -19,6 +19,13 @@
         color: #000;
         left: 760px;
         top: 50px;
+        margin-bottom: 20px;
+    }
+    .widget-disclosure img {
+        width: 20px;
+        height: auto;
+        object-fit: cover;
+        margin-bottom: 10px;
     }
     .widget-header {
         margin-left: 250px;
@@ -149,11 +156,16 @@
     .widget-disclosure{
         position: relative;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 2rem;
+        font-size: 0.5rem;
         font-weight: bold;
         color: #000;
         left: 0;
-        bottom:  200px;
+        top:  70px;
+    }
+    .widget-disclosure img {
+        width: 20px;
+        height: auto;
+        margin-bottom: 10px;
     }
     .widget-item .buttonoverlap{
         position: absolute;
