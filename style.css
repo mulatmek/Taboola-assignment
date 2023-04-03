@@ -2,6 +2,11 @@
 
 /* For Desktop and Tablet */
 @media (min-width: 640px) {
+    .main-widget{
+        margin: 0 auto;
+        position: absolute;
+        width: 100%;
+    }
     .widget-body {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -16,8 +21,8 @@
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         font-size: 0.5rem;
         font-weight: bold;
-        color: #000;
-        left: 760px;
+        color: #8b8989;
+        left:  800px;
         top: 50px;
         margin-bottom: 20px;
     }
@@ -28,10 +33,13 @@
         margin-bottom: 10px;
     }
     .widget-header {
+        color: #8b8989;
         margin-left: 250px;
+        position: relative;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         font-size: 0.7rem;
-        
+
+        top : 15px;
     }
 
     .widget-item {
@@ -39,7 +47,7 @@
         padding: 23px;
         position: relative;
         text-align: center;
-        border: 1px solid #070707;
+        border: 1px solid #f0eded;
     }
 
     
@@ -102,9 +110,16 @@
 
     /* For Smartphones */
 @media (max-width: 640px) {
-
+    .main-widget {
+        width: 100%;
+        margin: 0 auto;
+        position: absolute;
+    }
   .widget-header {
         margin-left: 0;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 0.5rem;
+        color: #676363;
     }
     .widget-body {
         display: grid;
@@ -119,7 +134,7 @@
         padding: 23px;
         text-align: center;
         text-align: center;
-        border: 1px solid #070707;
+        border: 1px solid #f0eded;
     }
     
     .widget-item img {
@@ -158,9 +173,9 @@
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         font-size: 0.5rem;
         font-weight: bold;
-        color: #000;
-        left: 0;
-        top:  70px;
+        color: #676363;
+        left: 250px;
+        top:  25px;
     }
     .widget-disclosure img {
         width: 20px;
