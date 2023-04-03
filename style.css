@@ -24,7 +24,17 @@
         margin-left: 250px;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         font-size: 0.7rem;
+        
     }
+
+    .widget-item {
+        width: 200px;
+        padding: 23px;
+        position: relative;
+        text-align: center;
+        border: 1px solid #070707;
+    }
+
     
     .widget-item h3 {
         font-size: 1rem;
@@ -34,14 +44,6 @@
         text-align: left;
         padding-bottom: 10px;
         border-bottom: 1px solid #ccc;
-    }
-
-    .widget-item {
-        width: 200px;
-        padding: 23px;
-        position: relative;
-        text-align: center;
-        border: 1px solid #070707;
     }
 
     .widget-item .buttonoverlap{
@@ -54,9 +56,6 @@
         display:block;
     }
   
-    .widget-item:hover .tooltiptext {
-        visibility: visible;
-    }
 
     .widget-item img {
         width: 100%;
@@ -89,6 +88,7 @@
                 line-clamp: 3; 
         -webkit-box-orient: vertical;
     } 
+
  }
     
 
@@ -155,4 +155,13 @@
         left: 0;
         bottom:  200px;
     }
+    .widget-item .buttonoverlap{
+        position: absolute;
+        display: none;
+        z-index: 1;
+    }
+    .widget-item:hover .buttonoverlap{ 
+        display:block;
+    }
+
 }

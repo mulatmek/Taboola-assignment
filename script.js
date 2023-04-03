@@ -31,9 +31,7 @@ const renderWidget = (data) => {
 			let categories = document.createElement("p");
 			categoriesHolder = '';
 			item.categories.forEach(category => { categoriesHolder += category + ', ' });
-			console.log(categoriesHolder);
-			categoriesHolder = categoriesHolder.slice(0, -2); 
-			console.log(categoriesHolder);
+			categoriesHolder = categoriesHolder.slice(0, -2);
 			categories.innerText = categoriesHolder;
 			widgetItem.appendChild(categories);
 		}
@@ -58,24 +56,38 @@ const renderWidget = (data) => {
 		brandingDiv.classList.add("branding");
 		brandingDiv.appendChild(branding);
 
-
+		// Creating the button to remove the item
 		let button = document.createElement("button");
 		button.addEventListener("click", ()=>{
-			widgetItem.remove();
+			undoButton.style.display = "block";
+		
 		});
+
 		button.title = "Remove this item";
 		button.classList.add("buttonoverlap");
 		button.innerText = "x";
 
+		// Creating the button to undo the removal of the item
+		let undoButton = document.createElement("button");
+		undoButton.addEventListener("click", ()=>{
+    	undoButton.style.display = "none";
+		});
 
+		undoButton.title = "Undo removal";
+		undoButton.classList.add("buttonoverlap");
+		undoButton.innerText = "Undo";
+		undoButton.style.display = "none";
+
+		// Creating the link to the item's url
 		let link = document.createElement("a");
 		link.href = item.url;
 		link.appendChild(img);
 		link.appendChild(titleDiv);
 		link.appendChild(brandingDiv);
 
-		
+		// Appending the elements to the widget
 		widgetItem.appendChild(button);
+		widgetItem.appendChild(undoButton);
 		widgetItem.appendChild(link);
 
 		widget.appendChild(widgetItem);
