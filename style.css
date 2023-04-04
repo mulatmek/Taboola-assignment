@@ -65,11 +65,22 @@
         z-index: 1;
         background-color: #4b4b4b; 
     }
+    
 
     .widget-item:hover .buttonoverlap{ 
         display:block;
     }
-  
+    
+    .widget-item.fade-out {
+        position: relative;
+        z-index: 1;
+    }
+        
+    .widget-item.fade-out button.buttonoverlap {
+    position: absolute;
+    top: 0;
+    right: 0;
+    }
 
     .widget-item img {
         width: 100%;

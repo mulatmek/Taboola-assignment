@@ -59,24 +59,12 @@ const renderWidget = (data) => {
 		// Creating the button to remove the item
 		let button = document.createElement("button");
 		button.addEventListener("click", ()=>{
-			undoButton.style.display = "block";
+			widgetItem.remove();
 		});
 
 		button.title = "Remove this item";
 		button.classList.add("buttonoverlap");
 		button.innerText = "x";
-
-		// Creating the button to undo the removal of the item
-		let undoButton = document.createElement("button");
-		
-		undoButton.addEventListener("click", ()=>{
-			undoButton.style.display = "none";
-		});
-
-		undoButton.title = "Undo removal";
-		undoButton.classList.add("buttonoverlap");
-		undoButton.innerText = "Undo";
-		undoButton.style.display = "none";
 
 		// Creating the link to the item's url
 		let link = document.createElement("a");
@@ -87,7 +75,6 @@ const renderWidget = (data) => {
 
 		// Appending the elements to the widget
 		widgetItem.appendChild(button);
-		widgetItem.appendChild(undoButton);
 		widgetItem.appendChild(link);
 
 		widget.appendChild(widgetItem);
