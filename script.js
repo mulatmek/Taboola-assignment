@@ -60,7 +60,6 @@ const renderWidget = (data) => {
 		let button = document.createElement("button");
 		button.addEventListener("click", ()=>{
 			undoButton.style.display = "block";
-		
 		});
 
 		button.title = "Remove this item";
@@ -69,8 +68,9 @@ const renderWidget = (data) => {
 
 		// Creating the button to undo the removal of the item
 		let undoButton = document.createElement("button");
+		
 		undoButton.addEventListener("click", ()=>{
-    	undoButton.style.display = "none";
+			undoButton.style.display = "none";
 		});
 
 		undoButton.title = "Undo removal";
