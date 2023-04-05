@@ -23,7 +23,7 @@ The Taboola widget should be displayed in the browser.
 
 
 
-## Mobile Exampl 
+## Mobile Example
 
 <img width="464" alt="image" src="https://user-images.githubusercontent.com/89039091/229605048-05cfed34-5ac6-4a45-a440-fafc7f861174.png">
 
